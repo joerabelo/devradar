@@ -1,0 +1,17 @@
+main {
+    flex: 1; /* Vai fazer com que o elemento Main ocupe todo espaço a direita do sidebar */
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Repete o elemento por 2x no tamanho de 1fr */
+    gap: 20px;
+    list-style-type: none;
+}
+
+@media (max-width: 650px) {
+    main ul {
+        grid-template-columns: 1fr;
+    }
+}
+
